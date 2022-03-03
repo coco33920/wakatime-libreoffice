@@ -1,0 +1,11 @@
+#ifndef __fr_charlotte_libreofficewakatime_xlibreofficewakatimeextension_idl__
+#define __fr_charlotte_libreofficewakatime_xlibreofficewakatimeextension_idl__
+
+module fr { module charlotte { module libreofficewakatime { 	
+
+	interface XLibreOfficeWakatimeExtension {
+
+	};
+
+ }; }; };
+#endif
