@@ -13,8 +13,7 @@ import com.sun.star.lib.uno.helper.WeakBase;
 
 public final class LibreOfficeWakatimeExtensionImpl extends WeakBase
    implements com.sun.star.lang.XServiceInfo,
-   			  com.sun.star.task.XJobExecutor,
-              fr.charlotte.libreofficewakatime.XLibreOfficeWakatimeExtension
+   			  com.sun.star.task.XJobExecutor
 {
     private final XComponentContext m_xContext;
     private static final String m_implementationName = LibreOfficeWakatimeExtensionImpl.class.getName();
@@ -66,11 +65,10 @@ public final class LibreOfficeWakatimeExtensionImpl extends WeakBase
     {
     	switch (action) {
     	case "showApiKey":
-    		//DialogHelper.showInfoMessage(m_xContext, null, "test : " + action);
+    		System.out.println("Test dialog has been called");
     		Test testDialog = new Test(m_xContext);
     		testDialog.show();
-        	//testDialog.show();
-    		break;
+        	break;
     	default:
     		DialogHelper.showErrorMessage(m_xContext, null, "Unknown action: " + action);
     	}

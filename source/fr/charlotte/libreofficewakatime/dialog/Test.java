@@ -16,6 +16,7 @@ public class Test implements XDialogEventHandler{
 	private String[] supportedActions = new String[] { actionOk };
 	
 	public Test(XComponentContext xContext) {
+		System.out.println("Test dialog has been created");
 		this.dialog = DialogHelper.createDialog("Test.xdl", xContext, this);
 	}
 

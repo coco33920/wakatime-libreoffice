@@ -1,10 +1,10 @@
 #ifndef __fr_charlotte_libreofficewakatime_libreofficewakatimeextension_idl__
 #define __fr_charlotte_libreofficewakatime_libreofficewakatimeextension_idl__
 
-#include <fr/charlotte/libreofficewakatime/XLibreOfficeWakatimeExtension.idl>
+#include <com/sun/star/task/XJobExecutor.idl>
 module fr { module charlotte { module libreofficewakatime { 	
 
-	service LibreOfficeWakatimeExtension : fr::charlotte::libreofficewakatime::XLibreOfficeWakatimeExtension {
+	service LibreOfficeWakatimeExtension : com::sun::star::task::XJobExecutor {
 
 	};
 
